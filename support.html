@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabOrder サポート</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f5f5f7;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        header p {
+            color: #86868b;
+            font-size: 1.1em;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            font-size: 1.3em;
+            margin-bottom: 16px;
+            color: #1d1d1f;
+        }
+        .card p, .card li {
+            color: #515154;
+            margin-bottom: 8px;
+        }
+        .card ul {
+            padding-left: 20px;
+        }
+        .card ul li {
+            margin-bottom: 6px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e5e7;
+            padding: 16px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h3 {
+            font-size: 1em;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #86868b;
+            font-size: 0.95em;
+        }
+        .contact-info {
+            text-align: center;
+            padding: 24px;
+        }
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #86868b;
+            font-size: 0.85em;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e7;
+        }
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LabOrder</h1>
+            <p>歯科技工指示書管理 - サポート</p>
+        </header>
+
+        <!-- アプリ概要 -->
+        <div class="card">
+            <h2>アプリについて</h2>
+            <p>LabOrder は、歯科医院と歯科技工所間における技工指示書の作成・送信・管理を効率化するための業務支援アプリです。技工指示書の作成からPDF出力、暗号化ZIPによる安全な送信、納期管理までを一貫して行うことができます。</p>
+            <br>
+            <p><span class="badge">完全オフライン</span> クラウドに依存しないローカル中心設計。患者データが外部に送信されることはありません。</p>
+        </div>
+
+        <!-- 主な機能 -->
+        <div class="card">
+            <h2>主な機能</h2>
+            <ul>
+                <li><strong>技工指示書の作成・編集:</strong> 患者情報、技工物情報、部位指定、設計指示を一画面で入力</li>
+                <li><strong>歯式チャート:</strong> 直感的な部位選択とApple Pencilによる手書き描画（iPad）</li>
+                <li><strong>PDF生成:</strong> A4サイズの技工指示書PDFをワンタップで生成</li>
+                <li><strong>安全な送信:</strong> 暗号化ZIP + パスワード別送の二段階送信</li>
+                <li><strong>納期管理:</strong> ガントチャート形式で全案件の納期を視覚的に管理</li>
+                <li><strong>保管管理:</strong> 模型・技工物の保管期限を自動追跡</li>
+                <li><strong>LAN同期:</strong> macOSとiPad間でデータをリアルタイム同期（院内ネットワークのみ）</li>
+                <li><strong>バックアップ:</strong> データベースと添付ファイルの完全バックアップ・復元</li>
+                <li><strong>再製作:</strong> 既存指示書から再製作指示書をワンタップで作成</li>
+            </ul>
+        </div>
+
+        <!-- 動作環境 -->
+        <div class="card">
+            <h2>動作環境</h2>
+            <ul>
+                <li>macOS 15.0 (Sequoia) 以降</li>
+                <li>iPadOS 18.0 以降</li>
+                <li>ユニバーサル購入（Mac / iPad 共通）</li>
+                <li>添付ファイル対応形式: JPEG, PNG, HEIC, STL, PDF</li>
+            </ul>
+        </div>
+
+        <!-- よくある質問 -->
+        <div class="card">
+            <h2>よくある質問</h2>
+
+            <div class="faq-item">
+                <h3>Q. 初回起動時にまず何をすればいいですか？</h3>
+                <p>マスタ設定からクリニック情報（医院名・住所・電話番号）と、送信先の技工所情報（名称・メールアドレス）を登録してください。その後、技工指示書一覧画面の「+」ボタンから新規指示書を作成できます。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. iPadとMacでデータを共有できますか？</h3>
+                <p>はい。LAN同期機能を使用することで、同一ネットワーク内のmacOS（サーバー）とiPad（クライアント）間でデータをリアルタイム同期できます。マスタ設定 > LAN同期から設定してください。インターネット接続は不要です。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 技工所への送信はどのように行われますか？</h3>
+                <p>指示書のPDFと添付ファイルを暗号化ZIPファイルにまとめ、技工所のメールアドレスに送信します。ZIPのパスワードは別メールで自動送信されるため、セキュリティが確保されます。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 患者データはどこに保存されますか？</h3>
+                <p>すべてのデータはデバイスのローカルストレージにのみ保存されます。クラウドサーバーへのアップロードやiCloud同期は行いません。データの管理はユーザー自身の責任において行ってください。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. バックアップはどのように取りますか？</h3>
+                <p>マスタ設定 > バックアップから、データベースと添付ファイルを含む完全バックアップを作成できます。バックアップファイルは任意の場所に保存でき、同じ画面から復元も可能です。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. 再製作の指示書を作成するには？</h3>
+                <p>指示書の詳細画面から「再製作」ボタンをタップすると、元の指示書情報を引き継いだ新しい指示書が作成されます。再製作理由を入力して保存してください。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Q. Apple Pencilでの描画に対応していますか？</h3>
+                <p>はい。iPadでは部位欄と設計欄にApple Pencilで直接描画できます。ペンの種類（ペン/マーカー/鉛筆）、色、太さを変更できます。描画データはPDFにも反映されます。</p>
+            </div>
+        </div>
+
+        <!-- お問い合わせ -->
+        <div class="card contact-info">
+            <h2>お問い合わせ</h2>
+            <p>ご不明な点やご要望がありましたら、お気軽にご連絡ください。</p>
+            <br>
+            <p><a href="mailto:support@greenhills-dc.org">support@greenhills-dc.org</a></p>
+        </div>
+
+        <footer>
+            <p>Copyright &copy; 2026 LabOrder開発チーム. All rights reserved.</p>
+            <p><a href="https://greenhills-dc.github.io/laborder-privacy">プライバシーポリシー</a></p>
+        </footer>
+    </div>
+</body>
+</html>
